@@ -1,0 +1,34 @@
+.navbar {
+    width: 87%;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    &__linklist {
+        display:flex;
+        align-items: center;
+        gap: 57px;
+    }
+    &__link {
+        list-style-type: none;
+        font-size: 24px;
+        text-decoration: none;
+        color: black;
+        &:hover, &:focus {
+            text-decoration: underline;
+        }
+    }
+    @media (max-width: 600px) {
+        width: 95%;
+        &__logo {
+            height: 46.88px;
+        }
+        &__linklist {
+            gap: 26px;
+        }
+        &__link {
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+    }
+}

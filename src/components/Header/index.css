@@ -1,0 +1,36 @@
+.navbar {
+  width: 87%;
+  margin: auto;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar__linklist {
+  display: flex;
+  align-items: center;
+  gap: 57px;
+}
+.navbar__link {
+  list-style-type: none;
+  font-size: 24px;
+  text-decoration: none;
+  color: black;
+}
+.navbar__link:hover, .navbar__link:focus {
+  text-decoration: underline;
+}
+@media (max-width: 600px) {
+  .navbar {
+    width: 95%;
+  }
+  .navbar__logo {
+    height: 46.88px;
+  }
+  .navbar__linklist {
+    gap: 26px;
+  }
+  .navbar__link {
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+}/*# sourceMappingURL=index.css.map */

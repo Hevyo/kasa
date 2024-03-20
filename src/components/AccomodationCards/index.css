@@ -1,0 +1,30 @@
+.accomodationContainer {
+  background-color: #F6F6F6;
+  padding: 60px 30px;
+  border-radius: 25px;
+  margin-bottom: 60px;
+}
+.accomodationContainer__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 50px;
+  margin: 0;
+  padding: auto;
+}
+@media (max-width: 1422px) {
+  .accomodationContainer__list {
+    justify-content: space-around;
+    padding: 0;
+  }
+}
+@media (max-width: 375px) {
+  .accomodationContainer {
+    padding: 0;
+    background-color: white;
+    margin-bottom: 30px;
+  }
+  .accomodationContainer__list {
+    gap: 20px;
+  }
+}/*# sourceMappingURL=index.css.map */

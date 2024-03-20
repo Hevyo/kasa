@@ -1,0 +1,29 @@
+.accomodationContainer {
+    background-color: #F6F6F6;
+    padding: 60px 30px;
+    border-radius: 25px;
+    margin-bottom: 60px;
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 50px;
+        margin: 0;
+        padding: auto;
+        @media (max-width: 1422px) {
+            justify-content: space-around;
+            padding: 0;
+        }
+    }
+    @media (max-width: 375px) {
+        padding: 0;
+        background-color: white;
+        margin-bottom: 30px;
+        &__list {
+            gap: 20px;
+        }
+    }
+}
+
+
+
