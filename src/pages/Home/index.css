@@ -2,13 +2,15 @@
   width: 87%;
   margin: auto;
 }
-.mainContainer__banner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@media (max-width: 600px) {
+  .mainContainer {
+    width: 95%;
+  }
+}
+
+.mainContainer__bannerHome {
   margin: 30px 0;
   height: 223px;
-  border: 1px solid rgba(0, 0, 0, 0.25);
   border-radius: 25px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   background: rgba(0, 0, 0, 0.6) url("../../assets/BannerImage.png");
@@ -16,8 +18,16 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: darken;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.mainContainer__banner--slogan {
+@media (max-width: 950px) {
+  .mainContainer__bannerHome {
+    height: 111px;
+  }
+}
+.mainContainer__bannerHome--slogan {
   color: white;
   font-family: "montserrat";
   font-size: 3em;
@@ -25,22 +35,12 @@
   font-weight: 700;
 }
 @media (max-width: 950px) {
-  .mainContainer__banner {
-    height: 111px;
-  }
-  .mainContainer__banner--slogan {
-    font-size: 24px;
-  }
-}
-@media (max-width: 600px) {
-  .mainContainer {
-    width: 95%;
-  }
-  .mainContainer__banner {
+  .mainContainer__bannerHome {
     justify-content: left;
   }
-  .mainContainer__banner--slogan {
+  .mainContainer__bannerHome--slogan {
     width: 68%;
+    font-size: 24px;
     margin-left: 15px;
     text-shadow: none;
   }

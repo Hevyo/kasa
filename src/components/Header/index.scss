@@ -2,6 +2,7 @@
     width: 87%;
     margin: auto;
     margin-top: 40px;
+    margin-bottom: 50px;
     display: flex;
     justify-content: space-between;
     &__linklist {
@@ -10,16 +11,18 @@
         gap: 57px;
     }
     &__link {
+        font-weight: 500;
         list-style-type: none;
         font-size: 24px;
         text-decoration: none;
         color: black;
-        &:hover, &:focus {
+        &:hover, &:focus, &.active {
             text-decoration: underline;
         }
     }
     @media (max-width: 600px) {
         width: 95%;
+        margin-bottom: 30px;
         &__logo {
             height: 46.88px;
         }

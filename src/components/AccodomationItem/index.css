@@ -30,7 +30,6 @@
   position: absolute;
   bottom: 30px;
   z-index: 1;
-  font-family: "montserrat";
 }
 @media (max-width: 550px) {
   .accomodationItem {

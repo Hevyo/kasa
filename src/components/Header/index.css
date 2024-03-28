@@ -2,6 +2,7 @@
   width: 87%;
   margin: auto;
   margin-top: 40px;
+  margin-bottom: 50px;
   display: flex;
   justify-content: space-between;
 }
@@ -11,17 +12,19 @@
   gap: 57px;
 }
 .navbar__link {
+  font-weight: 500;
   list-style-type: none;
   font-size: 24px;
   text-decoration: none;
   color: black;
 }
-.navbar__link:hover, .navbar__link:focus {
+.navbar__link:hover, .navbar__link:focus, .navbar__link.active {
   text-decoration: underline;
 }
 @media (max-width: 600px) {
   .navbar {
     width: 95%;
+    margin-bottom: 30px;
   }
   .navbar__logo {
     height: 46.88px;

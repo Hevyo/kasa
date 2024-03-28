@@ -1,0 +1,22 @@
+@import "../../index.scss";
+
+.mainContainer {
+    &__bannerAbout {
+    @include banner(rgba(0, 0, 0, 0.3) url("../../assets/BannerImageAbout.png"));
+    }
+    &__infoTabsAbout {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        @media (max-width: 600px) {
+            width:100%;
+        }
+    }
+}
+
+
+

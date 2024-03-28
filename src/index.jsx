@@ -5,8 +5,9 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
-// import AccomodationContainer from './components/AccomodationContainer';
+import Accomodation from './pages/Accomodation';
 import Error from './components/Error';
+import "./index.css"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -16,7 +17,7 @@ root.render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        {/* <Route path="/accomodation/:id" element={<Accomodation />} /> */}
+        <Route path="/accomodation/:id" element={<Accomodation />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer/>

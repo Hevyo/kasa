@@ -1,0 +1,13 @@
+* {
+  font-family: "montserrat";
+}
+
+.mainContainer {
+  width: 87%;
+  margin: auto;
+}
+@media (max-width: 600px) {
+  .mainContainer {
+    width: 95%;
+  }
+}/*# sourceMappingURL=index.css.map */

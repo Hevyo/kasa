@@ -1,0 +1,33 @@
+* {
+  font-family: "montserrat";
+}
+
+.mainContainer {
+  width: 87%;
+  margin: auto;
+}
+@media (max-width: 600px) {
+  .mainContainer {
+    width: 95%;
+  }
+}
+
+.errorContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(255, 96, 96);
+}
+.errorContainer__404 {
+  font-size: 288px;
+  font-weight: 700;
+  margin: 0;
+}
+.errorContainer__errorMessage {
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 70px;
+}
+.errorContainer__linkToHome {
+  color: black;
+}/*# sourceMappingURL=index.css.map */
