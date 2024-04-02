@@ -6,6 +6,7 @@
   margin-top: 50px;
 }
 .accomodationContainer__list {
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;

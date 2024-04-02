@@ -1,4 +1,4 @@
-@import "../../index.scss";
+@import "../../utils/tools.scss";
 
 @keyframes dropdown {
     from {
@@ -42,7 +42,7 @@
         
         overflow: hidden;
         height: 0;
-        transition: all .7s;
+        transition: height .7s;
         
         &.active {
             height: 100%;
@@ -60,6 +60,12 @@
             // animation-duration: 500ms;
             transform: translateY(-150%);
             transition: all .7s;
+        }
+        &--hideInfo {
+            transform: translateY(-100);
+            animation-name: dropdown;
+            animation-duration: 500ms;
+            animation-direction: reverse;
         }
     }
 }

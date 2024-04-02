@@ -2,12 +2,12 @@
   font-family: "montserrat";
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .mainContainer {
   width: 87%;
   margin: auto;
-}
-@media (max-width: 600px) {
-  .mainContainer {
-    width: 95%;
-  }
 }/*# sourceMappingURL=index.css.map */

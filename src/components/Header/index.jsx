@@ -6,7 +6,7 @@ import { useLocation } from 'react-router-dom';
 function Header() {
     const location = useLocation();
     const { pathname } = location;
-    console.log(location)
+
     return(
         <nav className="navbar">
             <img className="navbar__logo" src={Logo} alt="logo de Kasa" />

@@ -1,5 +1,6 @@
 import data from '../../datas/logements.json'
 import AccomodationItem from '../AccodomationItem';
+import { Link } from 'react-router-dom';
 import './index.css'
 
 function AccomodationCards() {
@@ -7,7 +8,9 @@ function AccomodationCards() {
         <div className='accomodationContainer'>
             <ul className='accomodationContainer__list'>
                 {data.map(({id, title, cover}) =>
-                    <AccomodationItem key={id} title={title} cover={cover}/>
+                    <Link to={`/accomodation/${id}`}>
+                        <AccomodationItem key={id} title={title} cover={cover}/>
+                    </Link>
                 )}
 			</ul>
         </div>

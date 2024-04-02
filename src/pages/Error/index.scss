@@ -1,0 +1,39 @@
+@import "../../utils/tools.scss";
+
+.errorContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: $main-color;
+    gap: 60px;
+    margin-bottom: 150px;
+    &__404 {
+        font-size: 288px;
+        font-weight: 700;
+        margin: 0;
+    }
+    &__errorMessage {
+        font-size: 36px;
+        font-weight: 500;
+    }
+    &__linkToHome {
+        color: black;
+    }
+    @media (max-width: 1000px) {
+        margin-bottom: 50px;
+        min-height: 500px;
+            &__404 {
+                font-size: 96px;
+            }
+            &__errorMessage {
+                font-size: 18px;
+                line-height: 1.5;
+                width: 61%;
+                text-align: center;
+            }
+            &__linkToHome {
+                font-size: 14px;
+            }
+    }
+}
