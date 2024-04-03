@@ -36,11 +36,11 @@ function InfoTab({title, info}) {
     return (
         <div className='infoTab'>
             <button className='infoTab__button' onClick={toggle}>
-                <h2 className='infoTab__button--title'>{title}</h2>
-                <img className={isOpen ? 'infoTab__button--arrow' : 'infoTab__button--arrowDown'} src={arrow} alt="flèche pour ouvrir et fermer l'onglet"></img>
+                <h2 className='infoTab__button__title'>{title}</h2>
+                <i className={isOpen ? 'fa-solid fa-chevron-up infoTab__button--arrowDown' : 'fa-solid fa-chevron-up infoTab__button--arrow'} />
             </button>
             <div className={ isOpen ? 'infoTab__boxInfo active' : 'infoTab__boxInfo'}>
-                <p className='infoTab__boxInfo--info'>{info}</p> 
+                {info}
             </div> 
         </div>
     )

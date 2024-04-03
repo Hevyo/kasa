@@ -2,6 +2,7 @@
     position: relative;
     height: 415px;
     &__button {
+        height: 25%;
         background-color: transparent;
         border: none;
         position: absolute;
@@ -9,18 +10,14 @@
         margin-bottom: auto;
         top: 0;
         bottom: 0;
+        cursor: pointer;
         &--right {
             right: 0;
             }
-        &__image {
-            width: 96px;
-            height: 119px;
-            &--left {
-                transform: rotate(-90deg);
-            }
-            &--right {
-                transform: rotate(+90deg);
-            }
+        &__icon {
+            font-size: 93px;
+            color: white;
+            padding: 0 20px;
         }
     }
     &__image {

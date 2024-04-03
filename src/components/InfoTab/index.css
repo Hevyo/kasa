@@ -24,16 +24,18 @@
   border-radius: 5px;
   cursor: pointer;
 }
-.infoTab__button--arrowDown {
+.infoTab__button--arrow {
   transform: rotate(360deg);
   transition: transform 400ms ease-in-out;
+  font-size: 30px;
 }
 .infoTab__button--title {
   font-size: 24px;
 }
-.infoTab__button--arrow {
+.infoTab__button--arrowDown {
   transform: rotate(180deg);
   transition: transform 500ms ease-in-out;
+  font-size: 30px;
 }
 .infoTab__boxInfo {
   overflow: hidden;
@@ -53,6 +55,7 @@
   display: inline-block;
   transform: translateY(-150%);
   transition: all 0.7s;
+  list-style-type: none;
 }
 .infoTab__boxInfo--hideInfo {
   transform: translateY(-100);

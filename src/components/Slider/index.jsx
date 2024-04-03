@@ -21,10 +21,10 @@ function Slider({pictures, title, id}) {
             {pictures.length > 1 &&
             <div>
             <button className="slider__button" onClick={handlePrevious}>
-                <img className="slider__button__image slider__button__image--left" src={arrow} alt="flèche pour voir l'élément précédent" />
+                <i className="fa-solid fa-chevron-left slider__button__icon"></i>
             </button>
             <button className="slider__button slider__button--right" onClick={handleNext}>
-                <img className="slider__button__image slider__button__image--right" src={arrow} alt="flèche pour voir l'élément suivant" />
+                <i className="fa-solid fa-chevron-right slider__button__icon" />
             </button>
             <p className="slider__imageCounter">{index + 1}/{pictures.length}</p>
             </div>

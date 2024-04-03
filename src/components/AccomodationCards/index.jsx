@@ -8,8 +8,8 @@ function AccomodationCards() {
         <div className='accomodationContainer'>
             <ul className='accomodationContainer__list'>
                 {data.map(({id, title, cover}) =>
-                    <Link to={`/accomodation/${id}`}>
-                        <AccomodationItem key={id} title={title} cover={cover}/>
+                    <Link key={id} to={`/accomodation/${id}`}>
+                        <AccomodationItem title={title} cover={cover}/>
                     </Link>
                 )}
 			</ul>

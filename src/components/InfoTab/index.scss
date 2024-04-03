@@ -26,16 +26,18 @@
         border: none;
         border-radius: 5px;
         cursor: pointer;
-        &--arrowDown {
+        &--arrow {
             transform: rotate(360deg);
             transition: transform 400ms ease-in-out;
+            font-size: 30px;
         }
         &--title {
             font-size: 24px;
         }
-        &--arrow {
+        &--arrowDown {
             transform: rotate(180deg);
             transition: transform 500ms ease-in-out;
+            font-size: 30px;
         }
     }
     &__boxInfo {
@@ -60,6 +62,7 @@
             // animation-duration: 500ms;
             transform: translateY(-150%);
             transition: all .7s;
+            list-style-type: none;
         }
         &--hideInfo {
             transform: translateY(-100);

@@ -3,6 +3,7 @@
   height: 415px;
 }
 .slider__button {
+  height: 25%;
   background-color: transparent;
   border: none;
   position: absolute;
@@ -10,19 +11,15 @@
   margin-bottom: auto;
   top: 0;
   bottom: 0;
+  cursor: pointer;
 }
 .slider__button--right {
   right: 0;
 }
-.slider__button__image {
-  width: 96px;
-  height: 119px;
-}
-.slider__button__image--left {
-  transform: rotate(-90deg);
-}
-.slider__button__image--right {
-  transform: rotate(90deg);
+.slider__button__icon {
+  font-size: 93px;
+  color: white;
+  padding: 0 20px;
 }
 .slider__image {
   height: 100%;

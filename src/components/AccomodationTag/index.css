@@ -1,0 +1,17 @@
+.tagContainer {
+  background-color: rgb(255, 96, 96);
+  color: white;
+  height: 13px;
+  border-radius: 10px;
+  text-align: center;
+  width: 11%;
+  padding: 6px 10px;
+  margin: 10px;
+}
+.tagContainer__tagTitle {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 13px;
+  margin: 0;
+}/*# sourceMappingURL=index.css.map */
