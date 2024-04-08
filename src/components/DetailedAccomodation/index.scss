@@ -1,3 +1,75 @@
-.starRed {
-    color: red;
+@import "../../utils/tools.scss";
+
+.mainContainer {
+    &__detailedAccomodationContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    &__detailedAccomodationinfoTabs {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 60px;
+    }
+}
+
+.mainInfos {
+    &__title {
+        color: $main-color;
+        font-size: 36px;
+        font-weight: 500;
+        margin: 0;
+        margin-top: 10px;
+    }
+    &__location {
+        font-weight: 500;
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 25px;
+    }
+    &__tags {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+}
+
+.hostInfos {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    &__hostIntroduction {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        &--hostName {
+            margin: 0;
+            width: 50%;
+            text-align: end;
+            align-self: center;
+            color: $main-color;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 25px;
+        }
+        &--hostPicture {
+            height: 64px;
+            width: 64px;
+            border-radius: 32px;
+        }
+    }
+    &__hostRate {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+        font-size: 20px;
+        &--redStar {
+            color: $main-color;
+        }
+        &--greyStar {
+            color: rgba(227, 227, 227, 1)
+        }
+    }
 }

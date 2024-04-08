@@ -26,5 +26,8 @@
 @media (max-width: 600px) {
   .mainContainer__infoTabsAbout {
     width: 100%;
+    margin-top: 0;
+    margin-bottom: 30px;
+    gap: 20px;
   }
 }/*# sourceMappingURL=index.css.map */

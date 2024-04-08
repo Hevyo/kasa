@@ -1,5 +1,4 @@
 import { useState } from "react"
-import arrow from '../../assets/arrow_back.png'
 import './index.css'
 
 function Slider({pictures, title, id}) {

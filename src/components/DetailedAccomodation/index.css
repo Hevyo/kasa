@@ -1,3 +1,69 @@
-.starRed {
-  color: red;
+.mainContainer__detailedAccomodationContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.mainContainer__detailedAccomodationinfoTabs {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 60px;
+}
+
+.mainInfos__title {
+  color: rgb(255, 96, 96);
+  font-size: 36px;
+  font-weight: 500;
+  margin: 0;
+  margin-top: 10px;
+}
+.mainInfos__location {
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+.mainInfos__tags {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.hostInfos {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+.hostInfos__hostIntroduction {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.hostInfos__hostIntroduction--hostName {
+  margin: 0;
+  width: 50%;
+  text-align: end;
+  align-self: center;
+  color: rgb(255, 96, 96);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25px;
+}
+.hostInfos__hostIntroduction--hostPicture {
+  height: 64px;
+  width: 64px;
+  border-radius: 32px;
+}
+.hostInfos__hostRate {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  font-size: 20px;
+}
+.hostInfos__hostRate--redStar {
+  color: rgb(255, 96, 96);
+}
+.hostInfos__hostRate--greyStar {
+  color: rgb(227, 227, 227);
 }/*# sourceMappingURL=index.css.map */

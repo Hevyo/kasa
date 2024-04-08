@@ -1,15 +1,8 @@
-@keyframes dropdown {
-  from {
-    transform: translateY(-100%);
-  }
-  to {
-    transform: translateY(0);
-  }
-}
 .infoTab {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  min-width: 582px;
 }
 .infoTab__button {
   display: flex;
@@ -17,7 +10,7 @@
   padding: 25px;
   align-items: center;
   width: 100%;
-  height: 52px;
+  height: 54px;
   background-color: rgb(255, 96, 96);
   color: white;
   border: none;
@@ -29,7 +22,7 @@
   transition: transform 400ms ease-in-out;
   font-size: 30px;
 }
-.infoTab__button--title {
+.infoTab__button__title {
   font-size: 24px;
 }
 .infoTab__button--arrowDown {
@@ -39,27 +32,34 @@
 }
 .infoTab__boxInfo {
   overflow: hidden;
-  height: 0;
-  transition: height 0.7s;
-}
-.infoTab__boxInfo.active {
-  height: 100%;
-}
-.infoTab__boxInfo.active .infoTab__boxInfo--info {
-  transform: translateY(0);
+  transition: height 0.2s ease;
 }
 .infoTab__boxInfo--info {
   font-size: 18px;
   line-height: 150%;
   padding: 0 30px 0 30px;
-  display: inline-block;
-  transform: translateY(-150%);
-  transition: all 0.7s;
   list-style-type: none;
+  margin-top: 10px;
 }
-.infoTab__boxInfo--hideInfo {
-  transform: translateY(-100);
-  animation-name: dropdown;
-  animation-duration: 500ms;
-  animation-direction: reverse;
+@media (max-width: 400px) {
+  .infoTab {
+    gap: 0;
+  }
+  .infoTab__button {
+    height: 30px;
+    padding: 0 15px;
+  }
+  .infoTab__button__title {
+    font-size: 13px;
+    margin: 0;
+  }
+  .infoTab__button--arrow {
+    font-size: 19px;
+  }
+  .infoTab__button--arrowDown {
+    font-size: 19px;
+  }
+  .infoTab__boxInfo--info {
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=index.css.map */

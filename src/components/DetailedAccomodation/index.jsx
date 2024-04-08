@@ -20,22 +20,34 @@ function DetailedAccomodation({id}) {
     return (
         <div className='mainContainer'>
             <Slider pictures={accomodationChosen.pictures} title={accomodationChosen.title} id={id} />
-            <h2>{accomodationChosen.title}</h2>
-            <p>{accomodationChosen.location}</p>
-            <p>{accomodationChosen.host.name}</p>
-            <img src={accomodationChosen.host.picture} alt={accomodationChosen.host.name}/>
-            {accomodationChosen.tags.map((tag, index) => (
-                <AccomodationTag tagTitle={tag} key={`${tag}-${index}`} />
-                )
-            )}
-            {range.map((rangeElem) =>
-				accomodationChosen.rating >= rangeElem ? (
-					<i className="fa-solid fa-star starRed" key={rangeElem.toString()} />
-				) : <i className="fa-solid fa-star starGrey" key={rangeElem.toString()} />
-			)}
-            <div className='infoTabs__container'>
-            <InfoTab title="Description" info={(<p className='infoTab__boxInfo--info'>{accomodationChosen.description}</p>)}/>
-            <InfoTab title="Équipements" info={equipmentsList}/>
+            <div className='mainContainer__detailedAccomodationContainer'>
+                <div className='mainInfos'>
+                    <h2 className='mainInfos__title'>{accomodationChosen.title}</h2>
+                    <p className='mainInfos__location'>{accomodationChosen.location}</p>
+                    <div className='mainInfos__tags'>
+                        {accomodationChosen.tags.map((tag, index) => (
+                            <AccomodationTag tagTitle={tag} key={`${tag}-${index}`} />
+                            )
+                        )}
+                    </div>
+                </div>
+                <div className='hostInfos'>
+                    <div className='hostInfos__hostIntroduction'>
+                        <p className='hostInfos__hostIntroduction--hostName'>{accomodationChosen.host.name}</p>
+                        <img className='hostInfos__hostIntroduction--hostPicture'src={accomodationChosen.host.picture} alt={accomodationChosen.host.name}/>
+                    </div>
+                    <div className='hostInfos__hostRate'>
+                        {range.map((rangeElem) =>
+                            accomodationChosen.rating >= rangeElem ? (
+                                <i className="fa-solid fa-star hostInfos__hostRate--redStar" key={rangeElem.toString()} />
+                            ) : <i className="fa-solid fa-star hostInfos__hostRate--greyStar" key={rangeElem.toString()} />
+                        )}
+                    </div>
+                </div>
+            </div>
+            <div className='mainContainer__detailedAccomodationinfoTabs'>
+                <InfoTab title="Description" info={(<p className='infoTab__boxInfo--info'>{accomodationChosen.description}</p>)}/>
+                <InfoTab title="Équipements" info={equipmentsList}/>
             </div>
         </div>
     )
