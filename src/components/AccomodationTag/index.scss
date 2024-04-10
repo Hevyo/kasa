@@ -16,4 +16,13 @@
         line-height: 13px;
         margin: 0;
     }
+    @media (max-width: 700px) {
+        height: 10px;
+        padding: 4px 8px;
+        width: 98px;
+        &__tagTitle {
+            font-size: 10px;
+            line-height: 10px;
+        }
+    }
 }

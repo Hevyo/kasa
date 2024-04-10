@@ -9,6 +9,24 @@
   display: flex;
   flex-direction: row;
   margin-bottom: 60px;
+  gap: 80px;
+}
+@media (max-width: 540px) {
+  .mainContainer__detailedAccomodationContainer {
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .mainContainer__detailedAccomodationinfoTabs {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 700px) {
+  .mainContainer__detailedAccomodationinfoTabs {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
 .mainInfos__title {
@@ -27,13 +45,23 @@
 .mainInfos__tags {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 10px;
+}
+@media (max-width: 540px) {
+  .mainInfos__title {
+    font-size: 18px;
+  }
+  .mainInfos__location {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
 }
 
 .hostInfos {
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 30px;
 }
 .hostInfos__hostIntroduction {
   display: flex;
@@ -58,12 +86,36 @@
 .hostInfos__hostRate {
   display: flex;
   justify-content: flex-end;
-  gap: 10px;
-  font-size: 20px;
+  gap: 12px;
+  font-size: 22px;
 }
 .hostInfos__hostRate--redStar {
   color: rgb(255, 96, 96);
 }
 .hostInfos__hostRate--greyStar {
   color: rgb(227, 227, 227);
+}
+@media (max-width: 540px) {
+  .hostInfos {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .hostInfos__hostIntroduction {
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  .hostInfos__hostIntroduction--hostName {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .hostInfos__hostIntroduction--hostPicture {
+    height: 32px;
+    width: 32px;
+    border-radius: 16px;
+  }
+  .hostInfos__hostRate {
+    align-self: center;
+    font-size: 15px;
+    gap: 5px;
+  }
 }/*# sourceMappingURL=index.css.map */

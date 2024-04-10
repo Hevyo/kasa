@@ -1,9 +1,7 @@
 // import Home from './pages/Home';
 // import About from './pages/About';
 // import Accomodation from './pages/Accomodation';
-// import Error from './components/Error';
-// import Header from './components/Header';
-// import Footer from './components/Footer';
+// import Error from './pages/Error';
 // import {createBrowserRouter, RouterProvider} from "react-router-dom";
 
 // const router = createBrowserRouter([
@@ -27,10 +25,8 @@
 //   },
 // ]);
 
-// function Router () {
-//   return (
-//   <RouterProvider router={router} />
-// );
-// }
+// function Router({ children }) {
+//     return <RouterProvider router={router}>{children}</RouterProvider>
+//  }
 
 // export default Router
