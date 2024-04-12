@@ -4,30 +4,16 @@ import InfoTab from '../InfoTab/Index';
 import AccomodationTag from '../AccomodationTag';
 import { useNavigate } from "react-router-dom";
 import './index.css'
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 
 
 function DetailedAccomodation({id}) {
  
-    const accomodationChosen = data.find((accomodation) => accomodation.id === `${id}`)
+    const accomodationChosen = data.find((accomodation) => accomodation.id === `${id}`) ?? null
 
-    // const [error, seterror] = useState(false)
-
-    // if (!accomodationChosen) {
-    //     console.log("ok")
-    //     seterror(true)
-    //     console.log(error)
-    // } else {
-    //     console.log("bonjour")
-    // }
 
     // const navigate = useNavigate()
 
-    // useEffect(() => {
-    //     if (error) {
-    //     return navigate("*");
-    // }
-    // })
 
     // useEffect(() => {
     //     if (!accomodationChosen) {
@@ -35,13 +21,14 @@ function DetailedAccomodation({id}) {
     //     }
     // }, [accomodationChosen, navigate]);
 
-        const equipmentsList = 
-        <ul className='infoTab__boxInfo--info'>
-            {accomodationChosen.equipments.map((equipment, index) => (
-                <li key={`${equipment}-${index}`}>{equipment}</li>
-                )
-            )}
-        </ul>
+    
+    const equipmentsList = 
+    <ul className='infoTab__boxInfo--info'>
+        {accomodationChosen && accomodationChosen.equipments.map((equipment, index) => (
+            <li key={`${equipment}-${index}`}>{equipment}</li>
+            )
+        )}
+    </ul>
 
         const range = [1, 2, 3, 4 , 5]
         
@@ -74,8 +61,8 @@ function DetailedAccomodation({id}) {
                 </div>
             </div>
             <div className='mainContainer__detailedAccomodationinfoTabs'>
-                <InfoTab title="Description" info={(<p className='infoTab__boxInfo--info'>{accomodationChosen.description}</p>)}/>
-                <InfoTab title="Équipements" info={equipmentsList}/>
+                <InfoTab title={(<h3 className='infoTab__button__title'>Description</h3>)} info={(<p className='infoTab__boxInfo--info'>{accomodationChosen.description}</p>)}/>
+                <InfoTab title={(<h3 className='infoTab__button__title'>Équipements</h3>)} info={equipmentsList}/>
             </div>
         </div>
         )

@@ -31,7 +31,7 @@ function About() {
             <div className ="mainContainer__infoTabsAbout">
      
                 {aboutList.map(({title, content, index}) => (
-                    <InfoTab key={`${title}-${index}`} title={title} info={(<p className='infoTab__boxInfo--info'>{content}</p>)} />
+                    <InfoTab key={`${title}-${index}`} title={(<h2 className='infoTab__button__title'>{title}</h2>)} info={(<p className='infoTab__boxInfo--info'>{content}</p>)} />
                     )
                 )}
             </div>
@@ -40,4 +40,3 @@ function About() {
 }
 
 export default About
-
