@@ -1,12 +1,10 @@
-import { useParams } from 'react-router-dom'
-import DetailedAccomodation from '../../components/DetailedAccomodation'
+import { useParams } from "react-router-dom"
+import DetailedAccomodation from "../../components/DetailedAccomodation"
 
-function Accomodation () {
+function Accomodation() {
     const { id } = useParams()
 
-    return (
-        <DetailedAccomodation id={id} />
-    )
+    return <DetailedAccomodation id={id} />
 }
 
 export default Accomodation

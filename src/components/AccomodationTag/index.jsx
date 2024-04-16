@@ -1,9 +1,9 @@
-import './index.css'
+import "./index.css"
 
-function AccomodationTag({tagTitle}) {
+function AccomodationTag({ tagTitle }) {
     return (
-        <div className='tagContainer'>
-            <p className='tagContainer__tagTitle'>{tagTitle}</p>
+        <div className="tagContainer">
+            <p className="tagContainer__tagTitle">{tagTitle}</p>
         </div>
     )
 }

@@ -23,17 +23,17 @@
     @media (max-width: 1000px) {
         margin-bottom: 50px;
         min-height: 500px;
-            &__404 {
-                font-size: 96px;
-            }
-            &__errorMessage {
-                font-size: 18px;
-                line-height: 1.5;
-                width: 61%;
-                text-align: center;
-            }
-            &__linkToHome {
-                font-size: 14px;
-            }
+        &__404 {
+            font-size: 96px;
+        }
+        &__errorMessage {
+            font-size: 18px;
+            line-height: 1.5;
+            width: 61%;
+            text-align: center;
+        }
+        &__linkToHome {
+            font-size: 14px;
+        }
     }
 }

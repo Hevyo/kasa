@@ -33,7 +33,7 @@
     }
     &__boxInfo {
         overflow: hidden;
-        transition: height .2s ease;
+        transition: height 0.2s ease;
         &--info {
             font-size: 18px;
             line-height: 150%;
@@ -60,9 +60,8 @@
         }
         &__boxInfo {
             &--info {
-            font-size: 12px;
+                font-size: 12px;
             }
         }
     }
 }
-

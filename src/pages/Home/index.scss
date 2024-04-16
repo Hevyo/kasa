@@ -9,7 +9,9 @@
         &--slogan {
             color: white;
             font-size: 3em;
-            text-shadow: 1px 0 0 black, 1px 1px 0 black, 0 1px 0 black, -1px 1px 0 black, -1px 0 0 black, -1px -1px 0 black, 0 -1px 0 black, 1px -1px 0 black, 0 4px 4px rgba(0, 0, 0, 0.5);
+            text-shadow: 1px 0 0 black, 1px 1px 0 black, 0 1px 0 black,
+                -1px 1px 0 black, -1px 0 0 black, -1px -1px 0 black,
+                0 -1px 0 black, 1px -1px 0 black, 0 4px 4px rgba(0, 0, 0, 0.5);
             font-weight: 700;
         }
     }
