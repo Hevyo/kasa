@@ -5,9 +5,9 @@ function Home() {
     return (
         <div className="mainContainer">
             <div className="mainContainer__bannerHome">
-                <p className="mainContainer__bannerHome--slogan">
+                <h1 className="mainContainer__bannerHome--slogan">
                     Chez vous, partout et ailleurs
-                </p>
+                </h1>
             </div>
             <AccomodationCards />
         </div>

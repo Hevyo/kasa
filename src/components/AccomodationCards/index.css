@@ -19,7 +19,13 @@
     padding: 0;
   }
 }
-@media (max-width: 375px) {
+@media (min-width: 1441px) and (max-width: 1873px) {
+  .accomodationContainer__list {
+    justify-content: center;
+    padding: 0;
+  }
+}
+@media (max-width: 928px) {
   .accomodationContainer {
     padding: 0;
     background-color: white;

@@ -1,9 +1,9 @@
-import Home from "./pages/Home"
-import About from "./pages/About"
-import Accomodation from "./pages/Accomodation"
-import Header from "./components/Header"
-import Footer from "./components/Footer"
-import Error from "./pages/Error"
+import Home from "../pages/Home"
+import About from "../pages/About"
+import Accomodation from "../pages/Accomodation"
+import Header from "../components/Header"
+import Footer from "../components/Footer"
+import Error from "../pages/Error"
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom"
 
 function Layout() {

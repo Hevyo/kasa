@@ -26,6 +26,7 @@
 @media (max-width: 950px) {
   .mainContainer__bannerHome {
     justify-content: left;
+    width: 100%;
   }
   .mainContainer__bannerHome--slogan {
     width: 68%;

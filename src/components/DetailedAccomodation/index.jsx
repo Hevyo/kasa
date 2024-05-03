@@ -15,10 +15,9 @@ function DetailedAccomodation({ id }) {
 
     const equipmentsList = (
         <ul className="infoTab__boxInfo--info">
-            {accomodationChosen &&
-                accomodationChosen.equipments.map((equipment, index) => (
-                    <li key={`${equipment}-${index}`}>{equipment}</li>
-                ))}
+            {accomodationChosen.equipments.map((equipment, index) => (
+                <li key={`${equipment}-${index}`}>{equipment}</li>
+            ))}
         </ul>
     )
 
@@ -33,9 +32,9 @@ function DetailedAccomodation({ id }) {
             />
             <div className="mainContainer__detailedAccomodationContainer">
                 <div className="mainInfos">
-                    <h2 className="mainInfos__title">
+                    <h1 className="mainInfos__title">
                         {accomodationChosen.title}
-                    </h2>
+                    </h1>
                     <p className="mainInfos__location">
                         {accomodationChosen.location}
                     </p>
@@ -79,7 +78,7 @@ function DetailedAccomodation({ id }) {
             <div className="mainContainer__detailedAccomodationinfoTabs">
                 <InfoTab
                     title={
-                        <h3 className="infoTab__button__title">Description</h3>
+                        <h2 className="infoTab__button__title">Description</h2>
                     }
                     info={
                         <p className="infoTab__boxInfo--info">
@@ -89,7 +88,7 @@ function DetailedAccomodation({ id }) {
                 />
                 <InfoTab
                     title={
-                        <h3 className="infoTab__button__title">Équipements</h3>
+                        <h2 className="infoTab__button__title">Équipements</h2>
                     }
                     info={equipmentsList}
                 />

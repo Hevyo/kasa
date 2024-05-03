@@ -10,4 +10,7 @@ body {
 .mainContainer {
     width: 86%;
     margin: auto;
+    @media (max-width: 600px) {
+        width: 89%;
+    }
 }

@@ -1,5 +1,5 @@
 .navbar {
-  width: 87%;
+  width: 86%;
   margin: auto;
   margin-top: 40px;
   margin-bottom: 50px;
@@ -23,6 +23,7 @@
 }
 @media (max-width: 600px) {
   .navbar {
+    width: 89%;
     margin-bottom: 30px;
   }
   .navbar__logo {

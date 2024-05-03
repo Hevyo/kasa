@@ -15,8 +15,12 @@
             justify-content: space-around;
             padding: 0;
         }
+        @media (min-width: 1441px) and (max-width: 1873px) {
+            justify-content: center;
+            padding: 0;
+        }
     }
-    @media (max-width: 375px) {
+    @media (max-width: 928px) {
         padding: 0;
         background-color: white;
         margin-top: 30px;
